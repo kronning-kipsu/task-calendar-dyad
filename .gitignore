@@ -1,0 +1,10 @@
+/node_modules
+/lib
+# testing
+/coverage
+
+# trash - logs, editors, etc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea
