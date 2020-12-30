@@ -65,13 +65,11 @@ export default class GoogleCalendarClient {
     /**
      *
      * @param calendarId
-     * @param eventId
      * @param summary
      * @param startDateTime RFC 3339 (e.g. YYYY-MM-DDT00:00:00Z)
      * @param endDateTime   RFC 3339 (e.g. YYYY-MM-DDT00:00:00Z)
      */
     public addEvent(calendarId: string,
-                    eventId: string,
                     summary: string,
                     startDateTime: string,
                     endDateTime: string): Promise<GoogleCalendarEvent> {

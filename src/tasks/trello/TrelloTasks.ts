@@ -15,7 +15,7 @@ export default class TrelloTasks implements TasksInterface {
         return this.client.getCards(this.listId)
             .then((cardsData) => {
                 return cardsData.map((card) => (TrelloTasks.toTaskData(card)))
-            });
+            })
     }
 
     public addTask(task: TaskData): Promise<TaskData> {
